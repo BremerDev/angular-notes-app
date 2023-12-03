@@ -19,4 +19,8 @@ export class NotesListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  getWordCount(str: string): number {
+    return str.split(' ').length;
+  }
 }
