@@ -1,0 +1,10 @@
+<h1>My Notes</h1>
+<app-notes-list
+    [notes]="notes"
+    (selectNote)="noteSelected($event)"
+></app-notes-list>
+<h2>Shared With Me</h2>
+<app-notes-list
+    [notes]="sharedNotes"
+    (selectNote)="noteSelected($event)"
+></app-notes-list>
